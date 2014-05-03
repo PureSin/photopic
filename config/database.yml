@@ -19,7 +19,9 @@ test:
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
-  pool: 5
-  timeout: 5000
+  adapter: postgresql
+  database: photopic
+  host: user3242.c1umedcvkcua.us-east-1.rds.amazonaws.com                            # HOST 
+  port: 5432                            # Port  
+  username: user3242                   # User Name  
+  password: user3242password  
