@@ -1,3 +1,12 @@
   [1m[36m (3.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
   [1m[35m (16.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (69.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (32.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (9.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20140503224712)
+  [1m[35m (9.9ms)[0m  BEGIN
+  [1m[36m (45.4ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "firstname" character varying(255), "lastname" character varying(255), "facebookID" character varying(255), "facebookAccessToken" character varying(255), "email" character varying(255), "location" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (27.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140503224712"]]
+  [1m[36m (18.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (95.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"

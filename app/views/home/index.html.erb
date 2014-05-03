@@ -16,13 +16,6 @@
       }
 
 </style>
-<h1 align="center">DigitalOcean Rails Application</h1>
-<img src="assets/rails.png" align="center"><br/>
-<p>This file is located in /home/rails/app/views/home/index.html.erb</p>
-
-Your application root is located in: <%= Rails.root.to_s %><br>
-
-Ruby version: <%= RUBY_VERSION %><br>
-
-Rails version: <%= Rails.version %><br>
-
+<h1 align="center"><%= @title %></h1>
+<p><%= @text %></p>
+<%= link_to "Contest", "/contest/index" %>
