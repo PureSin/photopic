@@ -43,3 +43,4 @@ end
 gem 'pg'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+gem "squirm_rails", require: "squirm/rails"
