@@ -8,6 +8,7 @@ Myapp::Application.routes.draw do
   get '/users/:id', to: 'users#show'
   get '/submissions/:id', to: 'submissions#show'
   get '/contests/:id', to: 'contests#show'
+  get '/contests/update/:id', to: 'contests#update'
   get '/contests/view/:id', to: 'contests#view'
 
   post '/users', to: 'users#create'

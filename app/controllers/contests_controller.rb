@@ -58,15 +58,10 @@ class ContestsController < ApplicationController
   # PATCH/PUT /contests/1
   # PATCH/PUT /contests/1.json
   def update
-    respond_to do |format|
-      if @contest.update(contest_params)
-        format.html { redirect_to @contest, notice: 'Contest was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: 'edit' }
-        format.json { render json: @contest.errors, status: :unprocessable_entity }
-      end
-    end
+    contestID = params[:id]
+    submissionID = params[:contestID]
+    res = Contests.set_winner(contestID, submissionID)
+    redirect_to "/contests/view/#{contestID}"
   end
 
   # DELETE /contests/1
