@@ -1,5 +1,5 @@
 class ContestsController < ApplicationController
-  before_action :set_contest, only: [:show, :edit, :update, :destroy]
+  # before_action :set_contest, only: [:show, :edit, :update, :destroy]
 
   # GET /contests
   # GET /contests.json
@@ -11,6 +11,11 @@ class ContestsController < ApplicationController
   # GET /contests/1
   # GET /contests/1.json
   def show
+    @contest = Contests.get_contest(params[:id])
+    unless @contest.nil?
+      render json: @contest
+      return
+    end
   end
 
   # GET /contests/new

@@ -1,5 +1,5 @@
 class SubmissionsController < ApplicationController
-  before_action :set_submission, only: [:show, :edit, :update, :destroy]
+  # before_action :set_submission, only: [:show, :edit, :update, :destroy]
 
   # GET /submissions
   # GET /submissions.json
@@ -11,6 +11,10 @@ class SubmissionsController < ApplicationController
   # GET /submissions/1
   # GET /submissions/1.json
   def show
+    @submission = Submission.get_submission(params[:id])
+    unless @submission.nil?
+      render json: @submission
+    end
   end
 
   # GET /submissions/new
@@ -35,30 +39,6 @@ class SubmissionsController < ApplicationController
         format.html { render action: 'new' }
         format.json { render json: @submission.errors, status: :unprocessable_entity }
       end
-    end
-  end
-
-  # PATCH/PUT /submissions/1
-  # PATCH/PUT /submissions/1.json
-  def update
-    respond_to do |format|
-      if @submission.update(submission_params)
-        format.html { redirect_to @submission, notice: 'Submission was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: 'edit' }
-        format.json { render json: @submission.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
-  # DELETE /submissions/1
-  # DELETE /submissions/1.json
-  def destroy
-    @submission.destroy
-    respond_to do |format|
-      format.html { redirect_to submissions_url }
-      format.json { head :no_content }
     end
   end
 
