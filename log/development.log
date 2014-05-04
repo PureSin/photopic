@@ -8945,3 +8945,114 @@ Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-05-04 03:35:
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-04 03:35:49 -0400
+
+
+Started GET "/contests" for 127.0.0.1 at 2014-05-04 04:26:05 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (12.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContestsController#index as HTML
+Completed 500 Internal Server Error in 338ms
+
+NoMethodError (undefined method `welcome_email' for Mailer:Class):
+  app/controllers/contests_controller.rb:7:in `index'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.6ms)
+
+
+Started GET "/contests" for 127.0.0.1 at 2014-05-04 04:26:25 -0400
+Processing by ContestsController#index as HTML
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `welcome_email' for Mailer:Class):
+  app/controllers/contests_controller.rb:7:in `index'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.8ms)
+
+
+Started GET "/contests" for 127.0.0.1 at 2014-05-04 04:26:26 -0400
+Processing by ContestsController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `welcome_email' for Mailer:Class):
+  app/controllers/contests_controller.rb:7:in `index'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.9ms)
+
+
+Started GET "/contests" for 127.0.0.1 at 2014-05-04 04:27:04 -0400
+Processing by ContestsController#index as HTML
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contests" for 127.0.0.1 at 2014-05-04 04:27:18 -0400
+Processing by ContestsController#index as HTML
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `mail' for Mailer:Class):
+  app/mailers/mailer.rb:5:in `test_email'
+  app/controllers/contests_controller.rb:7:in `index'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.7ms)
+
+
+Started GET "/contests" for 127.0.0.1 at 2014-05-04 04:27:35 -0400
+Processing by ContestsController#index as HTML
+Completed 500 Internal Server Error in 14ms
+
+ActionView::MissingTemplate (Missing template mailer/test_email with "mailer". Searched in:
+  * "mailer"
+):
+  app/mailers/mailer.rb:5:in `test_email'
+  app/controllers/contests_controller.rb:7:in `index'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+
+
+Started GET "/contests" for 127.0.0.1 at 2014-05-04 04:27:36 -0400
+Processing by ContestsController#index as HTML
+Completed 500 Internal Server Error in 6ms
+
+ActionView::MissingTemplate (Missing template mailer/test_email with "mailer". Searched in:
+  * "mailer"
+):
+  app/mailers/mailer.rb:5:in `test_email'
+  app/controllers/contests_controller.rb:7:in `index'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/contests" for 127.0.0.1 at 2014-05-04 04:27:36 -0400
+Processing by ContestsController#index as HTML
+Completed 500 Internal Server Error in 5ms
+
+ActionView::MissingTemplate (Missing template mailer/test_email with "mailer". Searched in:
+  * "mailer"
+):
+  app/mailers/mailer.rb:5:in `test_email'
+  app/controllers/contests_controller.rb:7:in `index'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/contests" for 127.0.0.1 at 2014-05-04 04:28:16 -0400
+Processing by ContestsController#index as HTML
+  Rendered mailer/test_email.html.erb (0.3ms)
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.0ms)

@@ -4,6 +4,7 @@ class ContestsController < ApplicationController
   # GET /contests
   # GET /contests.json
   def index
+    Mailer.test_email("TEST")
     if params[:latitude].nil? || params[:longitude].nil?
       render :json => { :error => 1, :success => 0 }
       return
