@@ -5,6 +5,6 @@
 <p id="end time">End Time: <%= @contest["contestEndDate"] %></p>
 <p id="weather">Weather: <%= @contest["weather"] %></p>
 
-<%= @submissions.each do |sub| %>
-  <p> <img src="<%= sub["mediaURL"] %>"> </p>
+<% @submissions.each do |sub| %>
+  <p> <img src="<%= sub["mediaURL"] %>"></p>
 <% end %>

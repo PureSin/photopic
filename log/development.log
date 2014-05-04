@@ -10411,3 +10411,243 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-04 04:52:35
 
 
 Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-05-04 04:52:35 -0400
+
+
+Started GET "/contests/view/12" for 127.0.0.1 at 2014-05-04 04:53:16 -0400
+Processing by ContestsController#view as HTML
+  Parameters: {"id"=>"12"}
+  Rendered contests/view.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 317ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-04 04:53:17 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-04 04:53:17 -0400
+
+
+Started GET "/assets/contest.css?body=1" for 127.0.0.1 at 2014-05-04 04:53:17 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-04 04:53:17 -0400
+
+
+Started GET "/assets/submission.css?body=1" for 127.0.0.1 at 2014-05-04 04:53:17 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-04 04:53:17 -0400
+
+
+Started GET "/assets/contest.js?body=1" for 127.0.0.1 at 2014-05-04 04:53:17 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-04 04:53:17 -0400
+
+
+Started GET "/assets/submission.js?body=1" for 127.0.0.1 at 2014-05-04 04:53:17 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-05-04 04:53:17 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-04 04:53:17 -0400
+
+
+Started GET "/contests/view/12" for 127.0.0.1 at 2014-05-04 04:54:54 -0400
+Processing by ContestsController#view as HTML
+  Parameters: {"id"=>"12"}
+  Rendered contests/view.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 685ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/submission.css?body=1" for 127.0.0.1 at 2014-05-04 04:54:55 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-04 04:54:55 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-04 04:54:55 -0400
+
+
+Started GET "/assets/contest.css?body=1" for 127.0.0.1 at 2014-05-04 04:54:55 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-04 04:54:55 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-04 04:54:55 -0400
+
+
+Started GET "/assets/contest.js?body=1" for 127.0.0.1 at 2014-05-04 04:54:55 -0400
+
+
+Started GET "/assets/submission.js?body=1" for 127.0.0.1 at 2014-05-04 04:54:55 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-04 04:54:55 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-05-04 04:54:55 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-04 04:54:55 -0400
+
+
+Started GET "/contests/view/5" for 127.0.0.1 at 2014-05-04 04:54:58 -0400
+Processing by ContestsController#view as HTML
+  Parameters: {"id"=>"5"}
+  Rendered contests/view.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 244ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-04 04:54:58 -0400
+
+
+Started GET "/assets/contest.css?body=1" for 127.0.0.1 at 2014-05-04 04:54:58 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-04 04:54:58 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-04 04:54:58 -0400
+
+
+Started GET "/assets/submission.css?body=1" for 127.0.0.1 at 2014-05-04 04:54:58 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-04 04:54:58 -0400
+
+
+Started GET "/assets/contest.js?body=1" for 127.0.0.1 at 2014-05-04 04:54:58 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-04 04:54:58 -0400
+
+
+Started GET "/assets/submission.js?body=1" for 127.0.0.1 at 2014-05-04 04:54:58 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-05-04 04:54:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-04 04:54:58 -0400
+
+
+Started GET "/contests/view/5" for 127.0.0.1 at 2014-05-04 04:55:03 -0400
+Processing by ContestsController#view as HTML
+  Parameters: {"id"=>"5"}
+  Rendered contests/view.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 268ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-04 04:55:03 -0400
+
+
+Started GET "/assets/submission.css?body=1" for 127.0.0.1 at 2014-05-04 04:55:03 -0400
+
+
+Started GET "/assets/contest.css?body=1" for 127.0.0.1 at 2014-05-04 04:55:03 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-04 04:55:03 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-04 04:55:03 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-04 04:55:03 -0400
+
+
+Started GET "/assets/contest.js?body=1" for 127.0.0.1 at 2014-05-04 04:55:04 -0400
+
+
+Started GET "/assets/submission.js?body=1" for 127.0.0.1 at 2014-05-04 04:55:04 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-04 04:55:04 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-05-04 04:55:04 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-04 04:55:04 -0400
+
+
+Started GET "/contests/view/5" for 127.0.0.1 at 2014-05-04 04:55:07 -0400
+Processing by ContestsController#view as HTML
+  Parameters: {"id"=>"5"}
+  Rendered contests/view.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 249ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-04 04:55:07 -0400
+
+
+Started GET "/assets/contest.css?body=1" for 127.0.0.1 at 2014-05-04 04:55:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-04 04:55:07 -0400
+
+
+Started GET "/assets/submission.css?body=1" for 127.0.0.1 at 2014-05-04 04:55:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-04 04:55:07 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-04 04:55:07 -0400
+
+
+Started GET "/assets/contest.js?body=1" for 127.0.0.1 at 2014-05-04 04:55:07 -0400
+
+
+Started GET "/assets/submission.js?body=1" for 127.0.0.1 at 2014-05-04 04:55:07 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-04 04:55:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-04 04:55:07 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-05-04 04:55:07 -0400
+
+
+Started GET "/contests/view/5" for 127.0.0.1 at 2014-05-04 04:55:38 -0400
+Processing by ContestsController#view as HTML
+  Parameters: {"id"=>"5"}
+  Rendered contests/view.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 274ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-04 04:55:38 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-04 04:55:38 -0400
+
+
+Started GET "/assets/contest.css?body=1" for 127.0.0.1 at 2014-05-04 04:55:38 -0400
+
+
+Started GET "/assets/submission.css?body=1" for 127.0.0.1 at 2014-05-04 04:55:38 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-04 04:55:38 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-04 04:55:38 -0400
+
+
+Started GET "/assets/contest.js?body=1" for 127.0.0.1 at 2014-05-04 04:55:38 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-04 04:55:38 -0400
+
+
+Started GET "/assets/submission.js?body=1" for 127.0.0.1 at 2014-05-04 04:55:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-04 04:55:38 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-05-04 04:55:38 -0400
