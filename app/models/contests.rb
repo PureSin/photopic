@@ -54,7 +54,7 @@ class Contests < ActiveRecord::Base
     conn = Contests.get_conn
     contest = contest[:contest]
 
-    query = "SELECT * FROM photopic.\"createContest\"(\'#{contest[:creatorID]}\', \'#{contest[:title]}\', \'#{contest[:description]}\', \'#{contest[:isOutdoor]}\', \'#{contest[:weather]}\', \'#{Time.new + 60}\', \'#{contest[:price]}\',\'#{contest[:latitude]}\', \'#{contest[:longitude]}\');"
+    query = "SELECT * FROM photopic.\"createContest\"(\'#{contest[:creatorID]}\', \'#{contest[:title]}\', \'#{contest[:description]}\', \'1\', \'#{contest[:weather]}\', \'#{Time.new + 60}\', \'#{contest[:price]}\',\'#{contest[:latitude]}\', \'#{contest[:longitude]}\');"
     puts query
     res = conn.exec(query)
     conn.close()

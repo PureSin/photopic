@@ -15,12 +15,12 @@
     <%= f.hidden_field :creatorID, :value => "2" %>
     <%= f.input :title %>
     <%= f.input :description %>
-    <%= f.input :isOutdoor, as: :boolean %>
+    <%= f.hidden_field :isOutdoor, as: :boolean, :value => "0" %>
     <%= f.input :weather, as: :select, collection: @weather %>
-    <%= f.input :contestEndDate, label_html: { class: '"input-append date"' }, label: "Contest end time" %>
+    <%= f.hidden_field :contestEndDate, :value => "now", label: "Contest end time" %>
     <%= f.input :price, label: "Contest prize amount" %>
-    <%= f.input :latitude %>
-    <%= f.input :longitude %>
+    <%= f.hidden_field :latitude, :value => "1.2" %>
+    <%= f.hidden_field :longitude, :value => "2.1" %>
     <br>
     <%= f.button :submit, label: "create new contest" %>
 <% end %>
