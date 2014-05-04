@@ -2,6 +2,7 @@ Myapp::Application.routes.draw do
   get '/', to: 'home#index'
   get '/home', to: 'home#index'
   get '/contests', to: 'contests#index'
+  get '/contests/all', to: 'contests#all'
   get '/contests/new', to: 'contests#new'
   get '/submissions', to: 'submissions#index'
 

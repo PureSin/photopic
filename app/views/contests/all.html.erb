@@ -1,0 +1,5 @@
+<h1>All Contest</h1>
+  <% @contests.each do |contest| %>
+
+    <a href="/contests/view/<%=contest["id"]%>">Title: <%= contest["title"] %>, Desc: <%= contest["description"] %></a><br>
+  <% end %>

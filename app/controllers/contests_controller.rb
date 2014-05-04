@@ -14,6 +14,10 @@ class ContestsController < ApplicationController
     render json: @contests
   end
 
+  def all
+    @contests = Contests.get_contests
+  end
+
   # GET /contests/1
   # GET /contests/1.json
   def show
