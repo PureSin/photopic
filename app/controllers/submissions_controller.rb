@@ -4,7 +4,8 @@ class SubmissionsController < ApplicationController
   # GET /submissions
   # GET /submissions.json
   def index
-    @submissions = Submission.all
+    @submissions = Submission.get_submissions
+    render json: @submissions
   end
 
   # GET /submissions/1
