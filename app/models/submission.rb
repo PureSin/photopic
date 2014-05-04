@@ -53,7 +53,7 @@ class Submission < ActiveRecord::Base
 
   def self.get_my_submissions(userID)
     conn = Contests.get_conn
-    query = "SELECT * FROM photopic.\"submissions\" WHERE \"userID\"=#{userID};"
+    query = "SELECT * FROM photopic.\"submissions\" AS a INNER JOIN photopic.\"contests\" AS b ON a.\"contestID\" = b.id WHERE \"userID\"=#{userID};"
     puts query
     res = conn.exec(query)
     conn.close()

@@ -15518,3 +15518,29 @@ Started GET "/submissions/me?access_token=CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRc
 Processing by SubmissionsController#me as HTML
   Parameters: {"access_token"=>"CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4UZCKze3llln8D8XnVqFzFQJaTmc7yJXSZAAhFCo0vgQaMcZCZB2nnuOXNh2Yg80faYAGBN9QyW1BztzfSQamKboiKqv1h2FrgbjC7NjIg6UZBuixbIpsZAjrXi"}
 Completed 200 OK in 317ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/submissions/me?access_token=CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4UZCKze3llln8D8XnVqFzFQJaTmc7yJXSZAAhFCo0vgQaMcZCZB2nnuOXNh2Yg80faYAGBN9QyW1BztzfSQamKboiKqv1h2FrgbjC7NjIg6UZBuixbIpsZAjrXi" for 127.0.0.1 at 2014-05-04 06:36:38 -0400
+Processing by SubmissionsController#me as HTML
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4UZCKze3llln8D8XnVqFzFQJaTmc7yJXSZAAhFCo0vgQaMcZCZB2nnuOXNh2Yg80faYAGBN9QyW1BztzfSQamKboiKqv1h2FrgbjC7NjIg6UZBuixbIpsZAjrXi"}
+Completed 500 Internal Server Error in 677ms
+
+PG::SyntaxError (ERROR:  syntax error at or near "WHERE"
+LINE 1: ...issions" AS a INNER JOIN photopic."contests" AS b WHERE "use...
+                                                             ^
+):
+  app/models/submission.rb:58:in `exec'
+  app/models/submission.rb:58:in `get_my_submissions'
+  app/controllers/submissions_controller.rb:24:in `me'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.3ms)
+
+
+Started GET "/submissions/me?access_token=CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4UZCKze3llln8D8XnVqFzFQJaTmc7yJXSZAAhFCo0vgQaMcZCZB2nnuOXNh2Yg80faYAGBN9QyW1BztzfSQamKboiKqv1h2FrgbjC7NjIg6UZBuixbIpsZAjrXi" for 127.0.0.1 at 2014-05-04 06:37:41 -0400
+Processing by SubmissionsController#me as HTML
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4UZCKze3llln8D8XnVqFzFQJaTmc7yJXSZAAhFCo0vgQaMcZCZB2nnuOXNh2Yg80faYAGBN9QyW1BztzfSQamKboiKqv1h2FrgbjC7NjIg6UZBuixbIpsZAjrXi"}
+Completed 200 OK in 282ms (Views: 1.6ms | ActiveRecord: 0.0ms)
