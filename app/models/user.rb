@@ -24,16 +24,17 @@ class User < ActiveRecord::Base
 
   def self.create_user(user)
     conn = PGconn.connect('user3242.c1umedcvkcua.us-east-1.rds.amazonaws.com',5432,'','','photopic','user3242','user3242password')
-    query = build_user_query(user)
+    query = User.build_user_query(user)
     if query.nil?
-      nil
+      return nil
     end
     res  = conn.exec(query)
     res
   end
 
   private
-  def build_user_query(user)
+  def self.build_user_query(user)
+    puts user
     unless user[:id]..nil? || user[:firstname].nil? || user[:lastname].nil? ||
       user[:facebookID].nil? || user[:facebookAccessToken].nil? || user[:email].nil? ||
       user[:location].nil?
