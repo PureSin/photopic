@@ -13095,3 +13095,38 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-04 05:13:57
 
 
 Started GET "/assets/submission.js?body=1" for 127.0.0.1 at 2014-05-04 05:13:57 -0400
+
+
+Started GET "/contests" for 127.0.0.1 at 2014-05-04 05:26:44 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (9.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContestsController#index as HTML
+  Rendered mailer/test_email.html.erb (1.4ms)
+Completed 200 OK in 32ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contests" for 127.0.0.1 at 2014-05-04 05:29:12 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (9.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContestsController#index as HTML
+  Rendered mailer/test_email.html.erb (0.8ms)
+Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contests" for 127.0.0.1 at 2014-05-04 05:29:57 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (10.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContestsController#index as HTML
+  Rendered mailer/test_email.html.erb (0.8ms)
+Completed 200 OK in 23ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contests" for 127.0.0.1 at 2014-05-04 05:30:40 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (9.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContestsController#index as HTML
+  Rendered mailer/test_email.html.erb (0.9ms)
+Completed 200 OK in 22ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contests" for 127.0.0.1 at 2014-05-04 05:31:59 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (16.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ContestsController#index as HTML
+  Rendered mailer/test_email.html.erb (0.8ms)
+Completed 200 OK in 21ms (Views: 0.2ms | ActiveRecord: 0.0ms)

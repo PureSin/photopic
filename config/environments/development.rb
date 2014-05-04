@@ -26,4 +26,18 @@ Myapp::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+
+  # ActionMailer::Base.smtp_settings = {
+  # :address              => "smtp.gmail.com",
+  # :port                 => "587",
+  # :domain               => "gmail.com",
+  # :user_name            => "kelvin.ma23@gmail.com",
+  # :password             => "wat3r14!",
+  # :authentication       => "plain",
+  # :enable_starttls_auto => true
+  # }
+  config.action_mailer.delivery_method = :mailjet
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.perform_deliveries = true
+
 end

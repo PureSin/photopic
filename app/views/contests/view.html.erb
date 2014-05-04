@@ -5,6 +5,19 @@
 <p id="end time">End Time: <%= @contest["contestEndDate"] %></p>
 <p id="weather">Weather: <%= @contest["weather"] %></p>
 
-<% @submissions.each do |sub| %>
-  <img src="<%= sub["mediaURL"] %>">
+<%= simple_form_for :contest, :url => '/contests/update' do |f| %>
+    <%= f.input :contestID, as: :hidden %>
+    <%= f.input :title %>
+    <%= f.input :description %>
+    <%= f.input :isOutdoor, as: :boolean %>
+    <%= f.input :weather, as: :select, collection: @weather %>
+    <%= f.input :contestEndDate, label_html: { class: '"input-append date"' }, label: "Contest end time" %>
+    <%= f.input :price %>
+    <%= f.input :latitude %>
+    <%= f.input :longitude %>
+    <%= f.button :submit, label: "create new contest" %>
+
+  <% @submissions.each do |sub| %>
+    <img src="<%= sub["mediaURL"] %>">
+  <% end %>
 <% end %>
