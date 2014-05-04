@@ -74,8 +74,7 @@ class User < ActiveRecord::Base
 
   def self.build_user_query(user)
     puts "User: #{user}"
-    query = "SELECT photopic.\"upsertFacebookUser\"(\'#{user["id"]}\', \'#{user["access_token"]}\',\'#{user["first_name"]}\', \'#{user["last_name"]}\', \'#{user["email"]}\', \'#{user["latitude"]}\', \'#{user["longitude"]}\');"
-    # query = "INSERT INTO \"photopic\".\"users\" (\"firstName\", \"lastName\", \"facebookID\", \"facebookAccessToken\", \"email\") VALUES (\'#{user[:firstName]}\', \'#{user[:lastName]}\', \'#{user[:facebookID]}\', \'#{user[:facebookAccessToken]}\', \'#{user[:email]}\');"
+    query = "SELECT * FROM photopic.\"upsertFacebookUser\"(\'#{user["id"]}\', \'#{user["access_token"]}\',\'#{user["first_name"]}\', \'#{user["last_name"]}\', \'#{user["email"]}\', \'#{user["latitude"]}\', \'#{user["longitude"]}\');"
     puts query
     return query
   end
