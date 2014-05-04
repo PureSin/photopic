@@ -22,4 +22,9 @@ class Contests < ActiveRecord::Base
     end
     contest
   end
+
+  def self.create_contest(contest)
+    #TODO
+    puts contest
+  end
 end

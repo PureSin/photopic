@@ -30,10 +30,10 @@ class ContestsController < ApplicationController
   # POST /contests
   # POST /contests.json
   def create
-    @contest = Contest.new(contest_params)
+    @contest = Contest.create_contest(contest_params)
 
     respond_to do |format|
-      if @contest.save
+      unless @contest.nil?
         format.html { redirect_to @contest, notice: 'Contest was successfully created.' }
         format.json { render action: 'show', status: :created, location: @contest }
       else
