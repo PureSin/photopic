@@ -65,7 +65,7 @@ class ContestsController < ApplicationController
     submissionID = params[:contestID]
     res = Contests.set_winner(contestID, submissionID)
     # email using mailjet
-    contest = Contests.get_contest(contestID)
+    contest = Contests.get_contest(contestID).first
     test = "Congrats on winning the contest: #{contest["title"]}, You have won $#{contest["price"]}!"
     system("curl -X POST --user \"7c80d03e683e8c7313d50629a9feafb7:434aaee16cb9e82e6ff117fc2716c2c7\" https://api.mailjet.com/v3/send/message -F from='kelvin.ma23@gmail.com' -F to=james.gibbons@gmail.com -F subject='Congrats on winning!' -F text='#{test}'")
     redirect_to "/contests/view/#{contestID}"
