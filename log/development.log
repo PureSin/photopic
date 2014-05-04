@@ -1186,3 +1186,31 @@ NameError (undefined local variable or method `contests' for Contests(Table does
 Started GET "/contests" for 127.0.0.1 at 2014-05-03 21:24:46 -0400
 Processing by ContestsController#index as HTML
 Completed 200 OK in 343ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/submissions" for 127.0.0.1 at 2014-05-03 21:32:11 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (10.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SubmissionsController#index as HTML
+Completed 200 OK in 153ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/submissions" for 127.0.0.1 at 2014-05-03 21:32:44 -0400
+Processing by SubmissionsController#index as HTML
+Completed 500 Internal Server Error in 298ms
+
+NameError (undefined local variable or method `column' for Submission(Table doesn't exist):Class):
+  app/models/submission.rb:9:in `block in get_submissions'
+  app/models/submission.rb:8:in `each'
+  app/models/submission.rb:8:in `get_submissions'
+  app/controllers/submissions_controller.rb:7:in `index'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.0ms)
+
+
+Started GET "/submissions" for 127.0.0.1 at 2014-05-03 21:32:54 -0400
+Processing by SubmissionsController#index as HTML
+Completed 200 OK in 127ms (Views: 1.1ms | ActiveRecord: 0.0ms)
