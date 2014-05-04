@@ -51,3 +51,5 @@ gem 'simple_form', '~> 3.0.2'
 group :assets do
   gem 'twitter-bootstrap-rails'
 end
+
+gem 'mailjet'
