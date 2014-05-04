@@ -15097,3 +15097,75 @@ Started GET "/submissions/me?access_token=CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRc
 Processing by SubmissionsController#me as HTML
   Parameters: {"access_token"=>"CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4UZCKze3llln8D8XnVqFzFQJaTmc7yJXSZAAhFCo0vgQaMcZCZB2nnuOXNh2Yg80faYAGBN9QyW1BztzfSQamKboiKqv1h2FrgbjC7NjIg6UZBuixbIpsZAjrXi"}
 Completed 200 OK in 239ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/submissions" for 127.0.0.1 at 2014-05-04 06:15:16 -0400
+Processing by SubmissionsController#index as HTML
+Completed 200 OK in 559ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/submissions" for 127.0.0.1 at 2014-05-04 06:17:55 -0400
+Processing by SubmissionsController#create as */*
+  Parameters: {"userID"=>"6", "contestID"=>"5", "mediaURL"=>"https://s3.amazonaws.com/photopic/307444_10150812240010147_1632306783_n.jpg", "latitude"=>"0.111", "longitude"=>"1.24", "submission"=>{"userID"=>"6", "contestID"=>"5", "mediaURL"=>"https://s3.amazonaws.com/photopic/307444_10150812240010147_1632306783_n.jpg", "latitude"=>"0.111", "longitude"=>"1.24"}}
+Completed 500 Internal Server Error in 800ms
+
+NameError (undefined local variable or method `params' for Submission(Table doesn't exist):Class):
+  app/models/submission.rb:42:in `create'
+  app/controllers/submissions_controller.rb:43:in `create'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.8ms)
+
+
+Started POST "/submissions" for 127.0.0.1 at 2014-05-04 06:18:37 -0400
+Processing by SubmissionsController#create as */*
+  Parameters: {"userID"=>"6", "contestID"=>"5", "mediaURL"=>"https://s3.amazonaws.com/photopic/307444_10150812240010147_1632306783_n.jpg", "latitude"=>"0.111", "longitude"=>"1.24", "submission"=>{"userID"=>"6", "contestID"=>"5", "mediaURL"=>"https://s3.amazonaws.com/photopic/307444_10150812240010147_1632306783_n.jpg", "latitude"=>"0.111", "longitude"=>"1.24"}}
+Completed 500 Internal Server Error in 183ms
+
+NoMethodError (undefined method `save' for [{"submitPhoto"=>""}]:Array):
+  app/controllers/submissions_controller.rb:46:in `block in create'
+  app/controllers/submissions_controller.rb:45:in `create'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.1ms)
+
+
+Started POST "/submissions" for 127.0.0.1 at 2014-05-04 06:19:08 -0400
+Processing by SubmissionsController#create as */*
+  Parameters: {"userID"=>"6", "contestID"=>"5", "mediaURL"=>"https://s3.amazonaws.com/photopic/307444_10150812240010147_1632306783_n.jpg", "latitude"=>"0.111", "longitude"=>"1.24", "submission"=>{"userID"=>"6", "contestID"=>"5", "mediaURL"=>"https://s3.amazonaws.com/photopic/307444_10150812240010147_1632306783_n.jpg", "latitude"=>"0.111", "longitude"=>"1.24"}}
+Completed 200 OK in 160ms (Views: 0.3ms | ActiveRecord: 13.5ms)
+
+
+Started POST "/submissions" for 127.0.0.1 at 2014-05-04 06:19:11 -0400
+Processing by SubmissionsController#create as */*
+  Parameters: {"userID"=>"6", "contestID"=>"5", "mediaURL"=>"https://s3.amazonaws.com/photopic/307444_10150812240010147_1632306783_n.jpg", "latitude"=>"0.111", "longitude"=>"1.24", "submission"=>{"userID"=>"6", "contestID"=>"5", "mediaURL"=>"https://s3.amazonaws.com/photopic/307444_10150812240010147_1632306783_n.jpg", "latitude"=>"0.111", "longitude"=>"1.24"}}
+Completed 200 OK in 135ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/submissions" for 127.0.0.1 at 2014-05-04 06:19:12 -0400
+Processing by SubmissionsController#create as */*
+  Parameters: {"userID"=>"6", "contestID"=>"5", "mediaURL"=>"https://s3.amazonaws.com/photopic/307444_10150812240010147_1632306783_n.jpg", "latitude"=>"0.111", "longitude"=>"1.24", "submission"=>{"userID"=>"6", "contestID"=>"5", "mediaURL"=>"https://s3.amazonaws.com/photopic/307444_10150812240010147_1632306783_n.jpg", "latitude"=>"0.111", "longitude"=>"1.24"}}
+Completed 200 OK in 146ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/submissions" for 127.0.0.1 at 2014-05-04 06:19:13 -0400
+Processing by SubmissionsController#create as */*
+  Parameters: {"userID"=>"6", "contestID"=>"5", "mediaURL"=>"https://s3.amazonaws.com/photopic/307444_10150812240010147_1632306783_n.jpg", "latitude"=>"0.111", "longitude"=>"1.24", "submission"=>{"userID"=>"6", "contestID"=>"5", "mediaURL"=>"https://s3.amazonaws.com/photopic/307444_10150812240010147_1632306783_n.jpg", "latitude"=>"0.111", "longitude"=>"1.24"}}
+Completed 200 OK in 120ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/submissions" for 127.0.0.1 at 2014-05-04 06:19:14 -0400
+Processing by SubmissionsController#create as */*
+  Parameters: {"userID"=>"6", "contestID"=>"5", "mediaURL"=>"https://s3.amazonaws.com/photopic/307444_10150812240010147_1632306783_n.jpg", "latitude"=>"0.111", "longitude"=>"1.24", "submission"=>{"userID"=>"6", "contestID"=>"5", "mediaURL"=>"https://s3.amazonaws.com/photopic/307444_10150812240010147_1632306783_n.jpg", "latitude"=>"0.111", "longitude"=>"1.24"}}
+Completed 200 OK in 133ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/submissions" for 127.0.0.1 at 2014-05-04 06:19:17 -0400
+Processing by SubmissionsController#index as HTML
+Completed 200 OK in 119ms (Views: 2.4ms | ActiveRecord: 0.0ms)
