@@ -1,16 +1,16 @@
 Myapp::Application.routes.draw do
   get '/', to: 'home#index'
   get '/home', to: 'home#index'
-  get '/contest', to: 'contest#index'
-  get '/submission', to: 'submission#index'
+  get '/contests', to: 'contests#index'
+  get '/submissions', to: 'submissions#index'
 
-  get '/user/:id', to: 'user#show'
-  get '/submission/:id', to: 'submission#show'
-  get '/contest/:id', to: 'contest#show'
+  get '/users/:id', to: 'users#show'
+  get '/submissions/:id', to: 'submissions#show'
+  get '/contests/:id', to: 'contests#show'
 
-  post '/user/:id', to: 'user#create'
-  post '/submission/:id', to: 'submission#create'
-  post '/contest/:id', to: 'contest#create'
+  post '/users/:id', to: 'users#create'
+  post '/submissions/:id', to: 'submissions#create'
+  post '/contests/:id', to: 'contests#create'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
