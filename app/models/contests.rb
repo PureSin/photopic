@@ -16,12 +16,12 @@ class Contests < ActiveRecord::Base
 
   def self.get_open_contests(params)
     conn = Contests.get_conn
-    query = "SELECT photopic.\"getOpenContests\"(\'#{params[:latitude]}\', \'#{params[:longitude]}\');"
+    query = "SELECT * FROM photopic.\"getOpenContests\"(\'#{params[:latitude]}\', \'#{params[:longitude]}\');"
     res = conn.exec(query)
     conn.close()
     contests = []
     res.each do |row|
-      contests.push(row["getOpenContests"])
+      contests.push(row)
     end
     contests
   end

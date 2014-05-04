@@ -3949,3 +3949,82 @@ Started GET "/contests?latitude=12.4&longitude=4.21" for 127.0.0.1 at 2014-05-04
 Processing by ContestsController#index as HTML
   Parameters: {"latitude"=>"12.4", "longitude"=>"4.21"}
 Completed 200 OK in 120ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contests?latitude=12.4&longitude=4.21" for 127.0.0.1 at 2014-05-04 01:12:44 -0400
+Processing by ContestsController#index as HTML
+  Parameters: {"latitude"=>"12.4", "longitude"=>"4.21"}
+Completed 200 OK in 72426ms (Views: 0.2ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/contests?latitude=12.4&longitude=4.21" for 127.0.0.1 at 2014-05-04 01:13:57 -0400
+Processing by ContestsController#index as HTML
+  Parameters: {"latitude"=>"12.4", "longitude"=>"4.21"}
+Completed 200 OK in 2771ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contests?latitude=12.4&longitude=4.21" for 127.0.0.1 at 2014-05-04 01:14:17 -0400
+Processing by ContestsController#index as HTML
+  Parameters: {"latitude"=>"12.4", "longitude"=>"4.21"}
+Completed 500 Internal Server Error in 117975ms
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/contests_controller.rb:14:in `index'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.0ms)
+
+
+Started GET "/contests?latitude=12.4&longitude=4.21" for 127.0.0.1 at 2014-05-04 01:16:45 -0400
+Processing by ContestsController#index as HTML
+  Parameters: {"latitude"=>"12.4", "longitude"=>"4.21"}
+Completed 500 Internal Server Error in 2ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/models/contests.rb:4:in `get_contests'
+  app/controllers/contests_controller.rb:12:in `index'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.4ms)
+
+
+Started GET "/contests?latitude=12.4&longitude=4.21" for 127.0.0.1 at 2014-05-04 01:16:52 -0400
+Processing by ContestsController#index as HTML
+  Parameters: {"latitude"=>"12.4", "longitude"=>"4.21"}
+Completed 200 OK in 93442ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contests?latitude=12.4&longitude=4.21" for 127.0.0.1 at 2014-05-04 01:18:33 -0400
+Processing by ContestsController#index as HTML
+  Parameters: {"latitude"=>"12.4", "longitude"=>"4.21"}
+Completed 200 OK in 58026ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contests?latitude=12.4&longitude=4.21" for 127.0.0.1 at 2014-05-04 01:19:40 -0400
+Processing by ContestsController#index as HTML
+  Parameters: {"latitude"=>"12.4", "longitude"=>"4.21"}
+Completed 200 OK in 183ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contests?latitude=12.4&longitude=4.21" for 127.0.0.1 at 2014-05-04 01:20:02 -0400
+Processing by ContestsController#index as HTML
+  Parameters: {"latitude"=>"12.4", "longitude"=>"4.21"}
+Completed 200 OK in 42164ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contests?latitude=12.4&longitude=4.21" for 127.0.0.1 at 2014-05-04 01:20:47 -0400
+Processing by ContestsController#index as HTML
+  Parameters: {"latitude"=>"12.4", "longitude"=>"4.21"}
+Completed 200 OK in 145ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contests?latitude=12.4&longitude=4.21" for 127.0.0.1 at 2014-05-04 01:20:48 -0400
+Processing by ContestsController#index as HTML
+  Parameters: {"latitude"=>"12.4", "longitude"=>"4.21"}
+Completed 200 OK in 123ms (Views: 0.5ms | ActiveRecord: 0.0ms)

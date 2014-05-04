@@ -10,6 +10,7 @@ class ContestsController < ApplicationController
     end
 
     @contests = Contests.get_open_contests(params)
+
     render json: @contests
   end
 
