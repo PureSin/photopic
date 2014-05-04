@@ -26,20 +26,25 @@ class User < ActiveRecord::Base
     conn = PGconn.connect('user3242.c1umedcvkcua.us-east-1.rds.amazonaws.com',5432,'','','photopic','user3242','user3242password')
     query = User.build_user_query(user)
     if query.nil?
+      puts "invalid request"
       return nil
     end
     res  = conn.exec(query)
-    res
+    res.each do |row|
+      return row
+    end
   end
 
   private
   def self.build_user_query(user)
-    puts user
-    unless user[:id]..nil? || user[:firstname].nil? || user[:lastname].nil? ||
+    unless user[:firstName].nil? || user[:lastName].nil? ||
       user[:facebookID].nil? || user[:facebookAccessToken].nil? || user[:email].nil? ||
-      user[:location].nil?
-      query = "INSERT INTO \"photopic\".\"users\" (id, firstName, lastName, facebookID, facebookAccessToken, email, location) VALUES (#{user[:id]}, #{user[:firstName]}, #{user[:lastName]}, #{user[:facebookID]}, #{user[:facebookAccessToken]}, #{user[:email]}, #{user[:location]});"
-      query
+      user[:latitude].nil? || user[:longitude].nil?
+      query = "SELECT photopic.\"upsertFacebookUser\"(\'#{user[:facebookID]}\', \'#{user[:facebookAccessToken]}\',\'#{user[:firstName]}\', \'#{user[:lastName]}\', \'#{user[:email]}\', \'#{user[:latitude]}\', \'#{user[:longitude]}\');"
+      # query = "INSERT INTO \"photopic\".\"users\" (\"firstName\", \"lastName\", \"facebookID\", \"facebookAccessToken\", \"email\") VALUES (\'#{user[:firstName]}\', \'#{user[:lastName]}\', \'#{user[:facebookID]}\', \'#{user[:facebookAccessToken]}\', \'#{user[:email]}\');"
+      puts query
+      return query
     end
+    puts user
   end
 end

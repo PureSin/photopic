@@ -10,6 +10,7 @@ class UsersController < ApplicationController
   # GET /users/new
   def new
     @user = User.create_user(params)
+    # TODO new user form
   end
 
   # GET /users/1/edit
@@ -19,12 +20,11 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
-    @user = User.create_user(user_params)
-
+    @res = User.create_user(user_params)
     respond_to do |format|
-      unless @user.nil?
+      unless @res.nil?
         # format.html { redirect_to @user, notice: 'User was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @user }
+        format.json { render json: @res }
       else
         # format.html { render action: 'new' }
         format.json { render json: {"error" => "failed"}, status: :unprocessable_entity }
@@ -64,6 +64,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params[:user]
+      params
     end
 end

@@ -44,3 +44,4 @@ gem 'pg'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 gem "squirm_rails", require: "squirm/rails"
+gem 'pry', '~> 0.9.12.6'
