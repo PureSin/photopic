@@ -6,5 +6,5 @@
 <p id="weather">Weather: <%= @contest["weather"] %></p>
 
 <% @submissions.each do |sub| %>
-  <p> <img src="<%= sub["mediaURL"] %>"></p>
+  <img src="<%= sub["mediaURL"] %>">
 <% end %>
