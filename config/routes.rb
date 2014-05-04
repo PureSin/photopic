@@ -8,9 +8,9 @@ Myapp::Application.routes.draw do
   get '/submissions/:id', to: 'submissions#show'
   get '/contests/:id', to: 'contests#show'
 
-  post '/users/:id', to: 'users#create'
-  post '/submissions/:id', to: 'submissions#create'
-  post '/contests/:id', to: 'contests#create'
+  post '/users', to: 'users#create'
+  post '/submissions', to: 'submissions#create'
+  post '/contests', to: 'contests#create'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
