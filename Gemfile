@@ -46,3 +46,8 @@ gem 'pg'
 gem "squirm_rails", require: "squirm/rails"
 gem 'pry', '~> 0.9.12.6'
 gem "koala", "~> 1.8.0rc1"
+gem 'simple_form', '~> 3.0.2'
+
+group :assets do
+  gem 'twitter-bootstrap-rails'
+end

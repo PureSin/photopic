@@ -1,4 +1,4 @@
-<h1>Listing contests</h1>
+<h1>Create new contest</h1>
 
 <table>
   <thead>
@@ -10,13 +10,11 @@
   </thead>
 
   <tbody>
-    <% @contests.each do |contest| %>
-      <tr>
-        <td><%= link_to 'Show', contest %></td>
-        <td><%= link_to 'Edit', edit_contest_path(contest) %></td>
-        <td><%= link_to 'Destroy', contest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+    <%= form_tag( contests_path, method: "post") do %>
+    <%= label_tag(:q, "Search for:") %>
+    <%= text_field_tag(:q) %>
+    <%= submit_tag("Create a new contest!") %>
+<% end %>
   </tbody>
 </table>
 

@@ -38,14 +38,24 @@ class Contests < ActiveRecord::Base
     contest
   end
 
-  def self.create_contest(contest)
-    #TODO
-    puts contest
+  def self.create(contest)
+    conn = Contests.get_conn
+    contest = contest[:contest]
+
+    query = "SELECT * FROM photopic.\"createContest\"(\'#{contest[:creatorID]}\', \'#{contest[:title]}\', \'#{contest[:description]}\', \'#{contest[:isOutdoor]}\', \'#{contest[:weather]}\', \'#{Time.new + 60}\', \'#{contest[:price]}\',\'#{contest[:latitude]}\', \'#{contest[:longitude]}\');"
+    puts query
+    res = conn.exec(query)
+    conn.close()
+    contests = []
+    res.each do |row|
+      contests.push(row)
+    end
+    contests.first
   end
 
   private
   def self.get_conn
-    conn = PGconn.connect('user3242.c1umedcvkcua.us-east-1.rds.amazonaws.com',5432,'','','photopic','user3242','user3242password')
+    PGconn.connect('user3242.c1umedcvkcua.us-east-1.rds.amazonaws.com',5432,'','','photopic','user3242','user3242password')
   end
 
 end

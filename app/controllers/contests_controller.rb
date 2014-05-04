@@ -24,9 +24,13 @@ class ContestsController < ApplicationController
     end
   end
 
+  def view
+    @contest = Contests.get_contest(params[:id]).first
+  end
+
   # GET /contests/new
   def new
-    @contest = Contest.new
+    @weather = ['rain','sun', 'overcast', 'fog', 'windy', 'snow','thunderstorm', 'hail']
   end
 
   # GET /contests/1/edit
@@ -36,15 +40,15 @@ class ContestsController < ApplicationController
   # POST /contests
   # POST /contests.json
   def create
-    @contest = Contest.create_contest(contest_params)
-
+    contest = contest_params[:contest]
+    puts contest
+    @contest = Contests.create(contest_params)
     respond_to do |format|
       unless @contest.nil?
-        format.html { redirect_to @contest, notice: 'Contest was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @contest }
+        @contest[:createContest] = @contest["createContest"]
+        format.html { redirect_to "/contests/view/#{@contest[:createContest]}" }
       else
         format.html { render action: 'new' }
-        format.json { render json: @contest.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -81,6 +85,6 @@ class ContestsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def contest_params
-      params[:contest]
+      params
     end
 end

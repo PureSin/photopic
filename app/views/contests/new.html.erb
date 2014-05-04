@@ -1,5 +1,26 @@
-<h1>New contest</h1>
+<h1>Create new contest</h1>
 
-<%= render 'form' %>
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
 
-<%= link_to 'Back', contests_path %>
+  <tbody>
+  <%= simple_form_for :contest, :url => '/contests' do |f| %>
+    <%= f.input :creatorID %>
+    <%= f.input :title %>
+    <%= f.input :description %>
+    <%= f.input :isOutdoor, as: :boolean %>
+    <%= f.input :weather, as: :select, collection: @weather %>
+    <%= f.input :contestEndDate, label_html: { class: '"input-append date"' }, label: "Contest end time" %>
+    <%= f.input :price %>
+    <%= f.input :latitude %>
+    <%= f.input :longitude %>
+    <%= f.button :submit, label: "create new contest" %>
+<% end %>
+  </tbody>
+</table>

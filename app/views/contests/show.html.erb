@@ -1,4 +1,9 @@
-<p id="notice"><%= notice %></p>
+<h1>Contest</h1>
+<p id="title"><%= @contest["title"] %></p>
+<p id="desc"><%= @contest["description"] %></p>
+<p id="price"><%= @contest["price"] %></p>
+<p id="end time"><%= @contest["contestEndDate"] %></p>
+<p id="weather"><%= @contest["weather"] %></p>
 
-<%= link_to 'Edit', edit_contest_path(@contest) %> |
-<%= link_to 'Back', contests_path %>
+
+
