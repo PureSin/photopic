@@ -4,7 +4,12 @@ class ContestsController < ApplicationController
   # GET /contests
   # GET /contests.json
   def index
-    @contests = Contests.get_contests
+    if params[:latitude].nil? || params[:longitude].nil?
+      render :json => { :error => 1, :success => 0 }
+      return
+    end
+
+    @contests = Contests.get_open_contests(params)
     render json: @contests
   end
 
