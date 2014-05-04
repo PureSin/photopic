@@ -2752,3 +2752,501 @@ Started POST "/users" for 127.0.0.1 at 2014-05-03 22:50:32 -0400
 Processing by UsersController#create as */*
   Parameters: {"firstName"=>"kelvin", "lastName"=>"master", "facebookID"=>"123555", "facebookAccessToken"=>"abc123", "email"=>"kelvin@test.com", "latitude"=>124.1, "longitude"=>124.2, "user"=>{"facebookID"=>"123555", "facebookAccessToken"=>"abc123", "email"=>"kelvin@test.com"}}
 Completed 200 OK in 144ms (Views: 0.3ms | ActiveRecord: 30.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-03 23:07:15 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (9.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Error occurred while parsing request parameters.
+Contents:
+
+{"access_token":CAAElHRZBbL4MBAIHaNPeuYZAHuOWfybKYnskttSevsZBh5KiCCEoDrKgsJJZAIyU9S2ok3k4y5KGPRrjwMzUMZBkhv3nEGZAfm1uGQ2xunj3K0vNy48gkL8BQ1QsHIWcqLU7R4u8zZAZAhtMbs3J6LjAuj23yShckaRb6jPSAurp81q0PC0frOl9}
+
+ActionDispatch::ParamsParser::ParseError (795: unexpected token at '{"access_token":CAAElHRZBbL4MBAIHaNPeuYZAHuOWfybKYnskttSevsZBh5KiCCEoDrKgsJJZAIyU9S2ok3k4y5KGPRrjwMzUMZBkhv3nEGZAfm1uGQ2xunj3K0vNy48gkL8BQ1QsHIWcqLU7R4u8zZAZAhtMbs3J6LjAuj23yShckaRb6jPSAurp81q0PC0frOl9}'):
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:53:in `rescue in parse_formatted_parameters'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:32:in `parse_formatted_parameters'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:23:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3450090637834480353__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/kelvinma/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/kelvinma/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/kelvinma/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.3ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.2ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-03 23:08:12 -0400
+Processing by UsersController#create as */*
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAIHaNPeuYZAHuOWfybKYnskttSevsZBh5KiCCEoDrKgsJJZAIyU9S2ok3k4y5KGPRrjwMzUMZBkhv3nEGZAfm1uGQ2xunj3K0vNy48gkL8BQ1QsHIWcqLU7R4u8zZAZAhtMbs3J6LjAuj23yShckaRb6jPSAurp81q0PC0frOl9", "user"=>{}}
+Completed 500 Internal Server Error in 1ms
+
+NameError (undefined local variable or method `get_conn' for #<Class:0x007f8fe2f34a98>):
+  app/models/user.rb:26:in `create_user'
+  app/controllers/users_controller.rb:24:in `create'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-03 23:08:34 -0400
+Processing by UsersController#create as */*
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAIHaNPeuYZAHuOWfybKYnskttSevsZBh5KiCCEoDrKgsJJZAIyU9S2ok3k4y5KGPRrjwMzUMZBkhv3nEGZAfm1uGQ2xunj3K0vNy48gkL8BQ1QsHIWcqLU7R4u8zZAZAhtMbs3J6LjAuj23yShckaRb6jPSAurp81q0PC0frOl9", "user"=>{}}
+Completed 500 Internal Server Error in 541ms
+
+PG::UndefinedColumn (ERROR:  column "caaelhrzbbl4mbaihanpeuyzahuowfybkynskttsevszbh5kicceodrkgsjjzai" does not exist
+LINE 1: ...OM "photopic"."users" WHERE "facebookAccessToken"=CAAElHRZBb...
+                                                             ^
+):
+  app/models/user.rb:29:in `exec'
+  app/models/user.rb:29:in `create_user'
+  app/controllers/users_controller.rb:24:in `create'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-03 23:08:56 -0400
+
+SyntaxError (/Users/kelvinma/Desktop/hack/photopic/app/models/user.rb:28: syntax error, unexpected $undefined
+...AccessToken\"=\'#{access_token\''};"
+...                               ^):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:269:in `safe_constantize'
+  activesupport (4.0.2) lib/active_support/core_ext/string/inflections.rb:77:in `safe_constantize'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:145:in `_default_wrap_model'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:96:in `block in model'
+  /Users/kelvinma/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/mutex_m.rb:73:in `synchronize'
+  /Users/kelvinma/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/mutex_m.rb:73:in `mu_synchronize'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:96:in `model'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:119:in `name'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:252:in `_wrapper_key'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:275:in `_wrapper_enabled?'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:233:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3450090637834480353__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/kelvinma/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/kelvinma/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/kelvinma/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-03 23:09:07 -0400
+Processing by UsersController#create as */*
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAIHaNPeuYZAHuOWfybKYnskttSevsZBh5KiCCEoDrKgsJJZAIyU9S2ok3k4y5KGPRrjwMzUMZBkhv3nEGZAfm1uGQ2xunj3K0vNy48gkL8BQ1QsHIWcqLU7R4u8zZAZAhtMbs3J6LjAuj23yShckaRb6jPSAurp81q0PC0frOl9", "user"=>{}}
+Completed 500 Internal Server Error in 132ms
+
+NoMethodError (undefined method `reach' for #<PG::Result:0x007f8fe6908030>):
+  app/models/user.rb:31:in `create_user'
+  app/controllers/users_controller.rb:24:in `create'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-03 23:09:17 -0400
+Processing by UsersController#create as */*
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAIHaNPeuYZAHuOWfybKYnskttSevsZBh5KiCCEoDrKgsJJZAIyU9S2ok3k4y5KGPRrjwMzUMZBkhv3nEGZAfm1uGQ2xunj3K0vNy48gkL8BQ1QsHIWcqLU7R4u8zZAZAhtMbs3J6LjAuj23yShckaRb6jPSAurp81q0PC0frOl9", "user"=>{}}
+Completed 500 Internal Server Error in 209ms
+
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/models/user.rb:58:in `build_user_query'
+  app/models/user.rb:41:in `create_user'
+  app/controllers/users_controller.rb:24:in `create'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-03 23:46:49 -0400
+
+SyntaxError (/Users/kelvinma/Desktop/hack/photopic/app/models/user.rb:62: syntax error, unexpected tINTEGER, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...r\"(\'#{user[:10152074116440869]}\', \'#{user[:access_token]...
+...                               ^
+/Users/kelvinma/Desktop/hack/photopic/app/models/user.rb:62: unterminated string meets end of file):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:269:in `safe_constantize'
+  activesupport (4.0.2) lib/active_support/core_ext/string/inflections.rb:77:in `safe_constantize'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:145:in `_default_wrap_model'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:96:in `block in model'
+  /Users/kelvinma/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/mutex_m.rb:73:in `synchronize'
+  /Users/kelvinma/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/mutex_m.rb:73:in `mu_synchronize'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:96:in `model'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:119:in `name'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:252:in `_wrapper_key'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:275:in `_wrapper_enabled?'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:233:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3450090637834480353__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/kelvinma/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/kelvinma/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/kelvinma/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.3ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.6ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-03 23:47:18 -0400
+Processing by UsersController#create as */*
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAIHaNPeuYZAHuOWfybKYnskttSevsZBh5KiCCEoDrKgsJJZAIyU9S2ok3k4y5KGPRrjwMzUMZBkhv3nEGZAfm1uGQ2xunj3K0vNy48gkL8BQ1QsHIWcqLU7R4u8zZAZAhtMbs3J6LjAuj23yShckaRb6jPSAurp81q0PC0frOl9", "user"=>{}}
+Completed 500 Internal Server Error in 566ms
+
+PG::ConnectionBad (FATAL:  remaining connection slots are reserved for non-replication superuser connections
+):
+  app/models/user.rb:55:in `initialize'
+  app/models/user.rb:55:in `new'
+  app/models/user.rb:55:in `get_conn'
+  app/models/user.rb:26:in `create_user'
+  app/controllers/users_controller.rb:24:in `create'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-03 23:49:05 -0400
+Processing by UsersController#create as */*
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAIHaNPeuYZAHuOWfybKYnskttSevsZBh5KiCCEoDrKgsJJZAIyU9S2ok3k4y5KGPRrjwMzUMZBkhv3nEGZAfm1uGQ2xunj3K0vNy48gkL8BQ1QsHIWcqLU7R4u8zZAZAhtMbs3J6LjAuj23yShckaRb6jPSAurp81q0PC0frOl9", "user"=>{}}
+Completed 422 Unprocessable Entity in 658ms (Views: 0.3ms | ActiveRecord: 30.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-03 23:49:34 -0400
+Processing by UsersController#create as */*
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAIHaNPeuYZAHuOWfybKYnskttSevsZBh5KiCCEoDrKgsJJZAIyU9S2ok3k4y5KGPRrjwMzUMZBkhv3nEGZAfm1uGQ2xunj3K0vNy48gkL8BQ1QsHIWcqLU7R4u8zZAZAhtMbs3J6LjAuj23yShckaRb6jPSAurp81q0PC0frOl9", "user"=>{}}
+Completed 500 Internal Server Error in 114ms
+
+PG::ConnectionBad (FATAL:  remaining connection slots are reserved for non-replication superuser connections
+):
+  app/models/user.rb:58:in `initialize'
+  app/models/user.rb:58:in `new'
+  app/models/user.rb:58:in `get_conn'
+  app/models/user.rb:28:in `create_user'
+  app/controllers/users_controller.rb:24:in `create'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-03 23:49:41 -0400
+Processing by UsersController#create as */*
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAIHaNPeuYZAHuOWfybKYnskttSevsZBh5KiCCEoDrKgsJJZAIyU9S2ok3k4y5KGPRrjwMzUMZBkhv3nEGZAfm1uGQ2xunj3K0vNy48gkL8BQ1QsHIWcqLU7R4u8zZAZAhtMbs3J6LjAuj23yShckaRb6jPSAurp81q0PC0frOl9", "user"=>{}}
+Completed 500 Internal Server Error in 85ms
+
+PG::ConnectionBad (FATAL:  remaining connection slots are reserved for non-replication superuser connections
+):
+  app/models/user.rb:58:in `initialize'
+  app/models/user.rb:58:in `new'
+  app/models/user.rb:58:in `get_conn'
+  app/models/user.rb:28:in `create_user'
+  app/controllers/users_controller.rb:24:in `create'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-03 23:50:18 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (9.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#create as */*
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAIHaNPeuYZAHuOWfybKYnskttSevsZBh5KiCCEoDrKgsJJZAIyU9S2ok3k4y5KGPRrjwMzUMZBkhv3nEGZAfm1uGQ2xunj3K0vNy48gkL8BQ1QsHIWcqLU7R4u8zZAZAhtMbs3J6LjAuj23yShckaRb6jPSAurp81q0PC0frOl9", "user"=>{}}
+Completed 500 Internal Server Error in 216ms
+
+PG::InvalidTextRepresentation (ERROR:  invalid input syntax for type double precision: ""
+LINE 1: ...3J6LjAuj23yShckaRb6jPSAurp81q0PC0frOl9','', '', '', '', '');
+                                                               ^
+):
+  app/models/user.rb:49:in `exec'
+  app/models/user.rb:49:in `create_user'
+  app/controllers/users_controller.rb:24:in `create'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-03 23:50:44 -0400
+Processing by UsersController#create as */*
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAIHaNPeuYZAHuOWfybKYnskttSevsZBh5KiCCEoDrKgsJJZAIyU9S2ok3k4y5KGPRrjwMzUMZBkhv3nEGZAfm1uGQ2xunj3K0vNy48gkL8BQ1QsHIWcqLU7R4u8zZAZAhtMbs3J6LjAuj23yShckaRb6jPSAurp81q0PC0frOl9", "user"=>{}}
+Completed 500 Internal Server Error in 242ms
+
+PG::InvalidTextRepresentation (ERROR:  invalid input syntax for type double precision: ""
+LINE 1: ...3J6LjAuj23yShckaRb6jPSAurp81q0PC0frOl9','', '', '', '', '');
+                                                               ^
+):
+  app/models/user.rb:49:in `exec'
+  app/models/user.rb:49:in `create_user'
+  app/controllers/users_controller.rb:24:in `create'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-03 23:51:20 -0400
+Processing by UsersController#create as */*
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAIHaNPeuYZAHuOWfybKYnskttSevsZBh5KiCCEoDrKgsJJZAIyU9S2ok3k4y5KGPRrjwMzUMZBkhv3nEGZAfm1uGQ2xunj3K0vNy48gkL8BQ1QsHIWcqLU7R4u8zZAZAhtMbs3J6LjAuj23yShckaRb6jPSAurp81q0PC0frOl9", "user"=>{}}
+Completed 500 Internal Server Error in 112ms
+
+PG::ConnectionBad (FATAL:  remaining connection slots are reserved for non-replication superuser connections
+):
+  app/models/user.rb:58:in `initialize'
+  app/models/user.rb:58:in `new'
+  app/models/user.rb:58:in `get_conn'
+  app/models/user.rb:28:in `create_user'
+  app/controllers/users_controller.rb:24:in `create'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-04 00:18:20 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (10.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#create as */*
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAIHaNPeuYZAHuOWfybKYnskttSevsZBh5KiCCEoDrKgsJJZAIyU9S2ok3k4y5KGPRrjwMzUMZBkhv3nEGZAfm1uGQ2xunj3K0vNy48gkL8BQ1QsHIWcqLU7R4u8zZAZAhtMbs3J6LjAuj23yShckaRb6jPSAurp81q0PC0frOl9", "user"=>{}}
+Completed 500 Internal Server Error in 242ms
+
+PG::InvalidTextRepresentation (ERROR:  invalid input syntax for type double precision: ""
+LINE 1: ...3J6LjAuj23yShckaRb6jPSAurp81q0PC0frOl9','', '', '', '', '');
+                                                               ^
+):
+  app/models/user.rb:49:in `exec'
+  app/models/user.rb:49:in `create_user'
+  app/controllers/users_controller.rb:24:in `create'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-04 00:20:33 -0400
+Processing by UsersController#create as */*
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAIHaNPeuYZAHuOWfybKYnskttSevsZBh5KiCCEoDrKgsJJZAIyU9S2ok3k4y5KGPRrjwMzUMZBkhv3nEGZAfm1uGQ2xunj3K0vNy48gkL8BQ1QsHIWcqLU7R4u8zZAZAhtMbs3J6LjAuj23yShckaRb6jPSAurp81q0PC0frOl9", "user"=>{}}
+Completed 500 Internal Server Error in 643ms
+
+PG::InvalidTextRepresentation (ERROR:  invalid input syntax for type double precision: ""
+LINE 1: ...hckaRb6jPSAurp81q0PC0frOl9','James', 'Gibbons', '', '', '');
+                                                               ^
+):
+  app/models/user.rb:51:in `exec'
+  app/models/user.rb:51:in `create_user'
+  app/controllers/users_controller.rb:24:in `create'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-04 00:20:49 -0400
+Processing by UsersController#create as */*
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAIHaNPeuYZAHuOWfybKYnskttSevsZBh5KiCCEoDrKgsJJZAIyU9S2ok3k4y5KGPRrjwMzUMZBkhv3nEGZAfm1uGQ2xunj3K0vNy48gkL8BQ1QsHIWcqLU7R4u8zZAZAhtMbs3J6LjAuj23yShckaRb6jPSAurp81q0PC0frOl9", "user"=>{}}
+Completed 500 Internal Server Error in 87ms
+
+PG::ConnectionBad (FATAL:  remaining connection slots are reserved for non-replication superuser connections
+):
+  app/models/user.rb:60:in `initialize'
+  app/models/user.rb:60:in `new'
+  app/models/user.rb:60:in `get_conn'
+  app/models/user.rb:28:in `create_user'
+  app/controllers/users_controller.rb:24:in `create'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-04 00:21:08 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (9.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#create as */*
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAIHaNPeuYZAHuOWfybKYnskttSevsZBh5KiCCEoDrKgsJJZAIyU9S2ok3k4y5KGPRrjwMzUMZBkhv3nEGZAfm1uGQ2xunj3K0vNy48gkL8BQ1QsHIWcqLU7R4u8zZAZAhtMbs3J6LjAuj23yShckaRb6jPSAurp81q0PC0frOl9", "user"=>{}}
+Completed 200 OK in 791ms (Views: 0.3ms | ActiveRecord: 30.7ms)

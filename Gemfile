@@ -45,3 +45,4 @@ gem 'pg'
 # gem 'debugger', group: [:development, :test]
 gem "squirm_rails", require: "squirm/rails"
 gem 'pry', '~> 0.9.12.6'
+gem "koala", "~> 1.8.0rc1"

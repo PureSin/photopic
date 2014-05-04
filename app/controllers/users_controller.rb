@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-    render json: User.find(params[:id])
+    render json: User.find(params[:access_token])
   end
 
   # GET /users/new
@@ -20,7 +20,8 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
-    @res = User.create_user(user_params)
+    access_token = params[:access_token]
+    @res = User.create_user(access_token)
     respond_to do |format|
       unless @res.nil?
         # format.html { redirect_to @user, notice: 'User was successfully created.' }

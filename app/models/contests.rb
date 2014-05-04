@@ -5,6 +5,7 @@ class Contests < ActiveRecord::Base
     conn = PGconn.connect('user3242.c1umedcvkcua.us-east-1.rds.amazonaws.com',5432,'','','photopic','user3242','user3242password')
     query = "SELECT * FROM \"photopic\".\"contests\";"
     res  = conn.exec(query)
+    conn.close
     contests = []
     res.each do |row|
       contests.push(row)
@@ -16,6 +17,7 @@ class Contests < ActiveRecord::Base
     conn = PGconn.connect('user3242.c1umedcvkcua.us-east-1.rds.amazonaws.com',5432,'','','photopic','user3242','user3242password')
     query = "SELECT * FROM \"photopic\".\"contests\" WHERE id=#{id};"
     res  = conn.exec(query)
+    conn.close
     contest = []
     res.each do |row|
       contest.push(row)
