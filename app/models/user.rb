@@ -33,18 +33,21 @@ class User < ActiveRecord::Base
     res.each do |row|
       user = row
     end
-    # if not -> query fb
-    if user.nil?
-      @graph = Koala::Facebook::API.new(access_token)
-      user = @graph.get_object("me")
-      if user.nil?
-        return nil
-      end
-      user["access_token"] = access_token
-      user["email"] = "" if user["email"].nil?
-      user["latitude"] = 0.0 if user["latitude"].nil?
-      user["longitude"] = 0.0 if user["longitude"].nil?
+
+    unless user.nil?
+      return user
     end
+
+    # if not -> query fb
+    @graph = Koala::Facebook::API.new(access_token)
+    user = @graph.get_object("me")
+    if user.nil?
+      return nil
+    end
+    user["access_token"] = access_token
+    user["email"] = "" if user["email"].nil?
+    user["latitude"] = 0.0 if user["latitude"].nil?
+    user["longitude"] = 0.0 if user["longitude"].nil?
 
     query = User.build_user_query(user)
     if query.nil?

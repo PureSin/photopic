@@ -3250,3 +3250,106 @@ Started POST "/users" for 127.0.0.1 at 2014-05-04 00:21:08 -0400
 Processing by UsersController#create as */*
   Parameters: {"access_token"=>"CAAElHRZBbL4MBAIHaNPeuYZAHuOWfybKYnskttSevsZBh5KiCCEoDrKgsJJZAIyU9S2ok3k4y5KGPRrjwMzUMZBkhv3nEGZAfm1uGQ2xunj3K0vNy48gkL8BQ1QsHIWcqLU7R4u8zZAZAhtMbs3J6LjAuj23yShckaRb6jPSAurp81q0PC0frOl9", "user"=>{}}
 Completed 200 OK in 791ms (Views: 0.3ms | ActiveRecord: 30.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-04 00:34:46 -0400
+PG::ConnectionBad: PQconsumeInput() SSL connection has been closed unexpectedly
+:               SELECT COUNT(*)
+              FROM pg_class c
+              LEFT JOIN pg_namespace n ON n.oid = c.relnamespace
+              WHERE c.relkind in ('v','r')
+              AND c.relname = 'users'
+              AND n.nspname = ANY (current_schemas(false))
+
+
+ActiveRecord::StatementInvalid (PG::ConnectionBad: PQconsumeInput() SSL connection has been closed unexpectedly
+:               SELECT COUNT(*)
+              FROM pg_class c
+              LEFT JOIN pg_namespace n ON n.oid = c.relnamespace
+              WHERE c.relkind in ('v','r')
+              AND c.relname = 'users'
+              AND n.nspname = ANY (current_schemas(false))
+):
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:774:in `async_exec'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:774:in `exec_no_cache'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql/database_statements.rb:138:in `block in exec_query'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract_adapter.rb:435:in `block in log'
+  activesupport (4.0.2) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract_adapter.rb:430:in `log'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql/database_statements.rb:137:in `exec_query'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql/schema_statements.rb:110:in `table_exists?'
+  activerecord (4.0.2) lib/active_record/connection_adapters/schema_cache.rb:32:in `table_exists?'
+  activerecord (4.0.2) lib/active_record/model_schema.rb:203:in `table_exists?'
+  activerecord (4.0.2) lib/active_record/attribute_methods.rb:135:in `attribute_names'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:109:in `block in include'
+  /Users/kelvinma/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/mutex_m.rb:73:in `synchronize'
+  /Users/kelvinma/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/mutex_m.rb:73:in `mu_synchronize'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:103:in `include'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:262:in `_wrap_parameters'
+  actionpack (4.0.2) lib/action_controller/metal/params_wrapper.rb:234:in `process_action'
+  activerecord (4.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.2) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.2) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.2) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.2) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__78812884615912571__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/kelvinma/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/kelvinma/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/kelvinma/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-05-04 00:35:14 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (9.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#create as */*
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4UZCKze3llln8D8XnVqFzFQJaTmc7yJXSZAAhFCo0vgQaMcZCZB2nnuOXNh2Yg80faYAGBN9QyW1BztzfSQamKboiKqv1h2FrgbjC7NjIg6UZBuixbIpsZAjrXi", "user"=>{}}
+Completed 200 OK in 126ms (Views: 0.4ms | ActiveRecord: 31.5ms)
