@@ -4,6 +4,7 @@ Myapp::Application.routes.draw do
   get '/contests', to: 'contests#index'
   get '/contests/all', to: 'contests#all'
   get '/contests/new', to: 'contests#new'
+  get '/contests/me', to: 'contests#me'
   get '/submissions', to: 'submissions#index'
 
   get '/users/:id', to: 'users#show'

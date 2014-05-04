@@ -18,6 +18,9 @@ class ContestsController < ApplicationController
     @contests = Contests.get_contests
   end
 
+  def me
+    @contests = Contests.get_my_contests(params[:userID])
+  end
   # GET /contests/1
   # GET /contests/1.json
   def show

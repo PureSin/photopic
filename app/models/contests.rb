@@ -38,6 +38,18 @@ class Contests < ActiveRecord::Base
     contest
   end
 
+  def self.get_my_contests(userID)
+    conn = Contests.get_conn
+    query = "SELECT * FROM \"photopic\".\"contests\" WHERE \"creatorID\"=#{userID};"
+    res  = conn.exec(query)
+    conn.close()
+    contest = []
+    res.each do |row|
+      contest.push(row)
+    end
+    contest
+  end
+
   def self.create(contest)
     conn = Contests.get_conn
     contest = contest[:contest]
