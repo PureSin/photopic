@@ -1,11 +1,20 @@
 Myapp::Application.routes.draw do
-  get "contest/index"
-  get "home/index"
+  get '/', to: 'home#index'
+  get '/home', to: 'home#index'
+  get '/contest', to: 'contest#index'
+  get '/submission', to: 'submission#index'
+
+  get '/user/:id', to: 'user#show'
+  get '/submission/:id', to: 'submission#show'
+  get '/contest/:id', to: 'contest#show'
+
+  post '/user/:id', to: 'user#create'
+  post '/submission/:id', to: 'submission#create'
+  post '/contest/:id', to: 'contest#create'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-root to: 'home#index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
