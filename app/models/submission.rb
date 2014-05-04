@@ -24,6 +24,19 @@ class Submission < ActiveRecord::Base
     submission
   end
 
+  def self.get_submissions_for_contest(contestID)
+    conn = Contests.get_conn
+
+    query = "SELECT * FROM photopic.\"getContestSubmissions\"(\'#{contestID}\');"
+    res = conn.exec(query)
+    conn.close()
+    submissions = []
+    res.each do |row|
+      submissions.push(row)
+    end
+    submissions
+  end
+
   def self.create(submission)
     conn = Contests.get_conn
     query = "SELECT * FROM photopic.\"submitPhoto\"(\'#{params[:userID]}\', \'#{params[:contestID]}\', \'#{params[:mediaURL]}\', \'#{params[:latitude]}\', \'#{params[:longitude]}\');"

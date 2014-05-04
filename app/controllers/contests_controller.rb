@@ -27,6 +27,7 @@ class ContestsController < ApplicationController
 
   def view
     @contest = Contests.get_contest(params[:id]).first
+    @submission = Submission.get_submissions_for_contest(params[:id])
   end
 
   # GET /contests/new

@@ -9069,3 +9069,167 @@ Started GET "/contests" for 127.0.0.1 at 2014-05-04 04:32:32 -0400
 Processing by ContestsController#index as HTML
   Rendered mailer/test_email.html.erb (0.0ms)
 Completed 200 OK in 42ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contests/new" for 127.0.0.1 at 2014-05-04 04:37:16 -0400
+Processing by ContestsController#new as HTML
+  Rendered contests/new.html.erb within layouts/application (85.5ms)
+Completed 200 OK in 129ms (Views: 128.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-04 04:37:16 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-04 04:37:17 -0400
+
+
+Started GET "/assets/contest.css?body=1" for 127.0.0.1 at 2014-05-04 04:37:17 -0400
+
+
+Started GET "/assets/submission.css?body=1" for 127.0.0.1 at 2014-05-04 04:37:17 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-04 04:37:17 -0400
+
+
+Started GET "/assets/contest.js?body=1" for 127.0.0.1 at 2014-05-04 04:37:17 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-04 04:37:17 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-04 04:37:17 -0400
+
+
+Started GET "/assets/submission.js?body=1" for 127.0.0.1 at 2014-05-04 04:37:17 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-05-04 04:37:17 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-04 04:37:17 -0400
+
+
+Started GET "/contests/2" for 127.0.0.1 at 2014-05-04 04:37:18 -0400
+Processing by ContestsController#show as HTML
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 584ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contests/view/2" for 127.0.0.1 at 2014-05-04 04:37:47 -0400
+Processing by ContestsController#view as HTML
+  Parameters: {"id"=>"2"}
+Completed 500 Internal Server Error in 141ms
+
+NameError (uninitialized constant ContestsController::Submissions):
+  app/controllers/contests_controller.rb:30:in `view'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.7ms)
+
+
+Started GET "/contests/view/2" for 127.0.0.1 at 2014-05-04 04:38:03 -0400
+Processing by ContestsController#view as HTML
+  Parameters: {"id"=>"2"}
+  Rendered contests/view.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 105197ms
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    1: <h1>Contest</h1>
+    2: <p id="title">Title: <%= @contest["title"] %></p>
+    3: <p id="desc">Desc: <%= @contest["description"] %></p>
+    4: <p id="price">Prices: <%= @contest["price"] %></p>
+    5: <p id="end time">End Time: <%= @contest["contestEndDate"] %></p>
+  app/views/contests/view.html.erb:2:in `_app_views_contests_view_html_erb__985871565750131953_70141828790580'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.3ms)
+
+
+Started GET "/contests/view/2" for 127.0.0.1 at 2014-05-04 04:39:50 -0400
+Processing by ContestsController#view as HTML
+  Parameters: {"id"=>"2"}
+  Rendered contests/view.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 17062ms
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    1: <h1>Contest</h1>
+    2: <p id="title">Title: <%= @contest["title"] %></p>
+    3: <p id="desc">Desc: <%= @contest["description"] %></p>
+    4: <p id="price">Prices: <%= @contest["price"] %></p>
+    5: <p id="end time">End Time: <%= @contest["contestEndDate"] %></p>
+  app/views/contests/view.html.erb:2:in `_app_views_contests_view_html_erb__985871565750131953_70141828790580'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (43.3ms)
+
+
+Started GET "/contests/" for 127.0.0.1 at 2014-05-04 04:40:12 -0400
+Processing by ContestsController#index as HTML
+  Rendered mailer/test_email.html.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contests" for 127.0.0.1 at 2014-05-04 04:40:15 -0400
+Processing by ContestsController#index as HTML
+  Rendered mailer/test_email.html.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contests?latitude=12.4&longitude=4.21" for 127.0.0.1 at 2014-05-04 04:40:17 -0400
+Processing by ContestsController#index as HTML
+  Parameters: {"latitude"=>"12.4", "longitude"=>"4.21"}
+  Rendered mailer/test_email.html.erb (0.1ms)
+Completed 200 OK in 157ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contests/view/12" for 127.0.0.1 at 2014-05-04 04:40:33 -0400
+Processing by ContestsController#view as HTML
+  Parameters: {"id"=>"12"}
+  Rendered contests/view.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12111ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-04 04:40:45 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-04 04:40:46 -0400
+
+
+Started GET "/assets/contest.css?body=1" for 127.0.0.1 at 2014-05-04 04:40:46 -0400
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-04 04:40:46 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-04 04:40:46 -0400
+
+
+Started GET "/assets/submission.css?body=1" for 127.0.0.1 at 2014-05-04 04:40:46 -0400
+
+
+Started GET "/assets/contest.js?body=1" for 127.0.0.1 at 2014-05-04 04:40:46 -0400
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-04 04:40:46 -0400
+
+
+Started GET "/assets/submission.js?body=1" for 127.0.0.1 at 2014-05-04 04:40:46 -0400
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-05-04 04:40:46 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-04 04:40:46 -0400
+
+
+Started GET "/contests/view/5" for 127.0.0.1 at 2014-05-04 04:40:49 -0400
+Processing by ContestsController#view as HTML
+  Parameters: {"id"=>"5"}
