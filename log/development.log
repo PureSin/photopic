@@ -14916,3 +14916,184 @@ Started GET "/assets/submission.js?body=1" for 127.0.0.1 at 2014-05-04 05:55:24 
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-04 05:55:24 -0400
+
+
+Started GET "/contests" for 127.0.0.1 at 2014-05-04 05:58:53 -0400
+Processing by ContestsController#index as HTML
+  Rendered mailer/test_email.html.erb (0.3ms)
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contests?latitude=12.4&longitude=4.21" for 127.0.0.1 at 2014-05-04 05:58:57 -0400
+Processing by ContestsController#index as HTML
+  Parameters: {"latitude"=>"12.4", "longitude"=>"4.21"}
+  Rendered mailer/test_email.html.erb (0.1ms)
+Completed 200 OK in 601ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/submissions/me?access_token=CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4UZCKze3llln8D8XnVqFzFQJaTmc7yJXSZAAhFCo0vgQaMcZCZB2nnuOXNh2Yg80faYAGBN9QyW1BztzfSQamKboiKqv1h2FrgbjC7NjIg6UZBuixbIpsZAjrXi" for 127.0.0.1 at 2014-05-04 06:09:31 -0400
+Processing by SubmissionsController#show as HTML
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4UZCKze3llln8D8XnVqFzFQJaTmc7yJXSZAAhFCo0vgQaMcZCZB2nnuOXNh2Yg80faYAGBN9QyW1BztzfSQamKboiKqv1h2FrgbjC7NjIg6UZBuixbIpsZAjrXi", "id"=>"me"}
+Completed 500 Internal Server Error in 628ms
+
+PG::UndefinedColumn (ERROR:  column "me" does not exist
+LINE 1: SELECT * FROM "photopic"."submissions" WHERE id=me;
+                                                        ^
+):
+  app/models/submission.rb:18:in `exec'
+  app/models/submission.rb:18:in `get_submission'
+  app/controllers/submissions_controller.rb:14:in `show'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.1ms)
+
+
+Started GET "/submissions/me?access_token=CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4UZCKze3llln8D8XnVqFzFQJaTmc7yJXSZAAhFCo0vgQaMcZCZB2nnuOXNh2Yg80faYAGBN9QyW1BztzfSQamKboiKqv1h2FrgbjC7NjIg6UZBuixbIpsZAjrXi" for 127.0.0.1 at 2014-05-04 06:10:17 -0400
+Processing by SubmissionsController#show as HTML
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4UZCKze3llln8D8XnVqFzFQJaTmc7yJXSZAAhFCo0vgQaMcZCZB2nnuOXNh2Yg80faYAGBN9QyW1BztzfSQamKboiKqv1h2FrgbjC7NjIg6UZBuixbIpsZAjrXi", "id"=>"me"}
+Completed 500 Internal Server Error in 198ms
+
+PG::UndefinedColumn (ERROR:  column "me" does not exist
+LINE 1: SELECT * FROM "photopic"."submissions" WHERE id=me;
+                                                        ^
+):
+  app/models/submission.rb:18:in `exec'
+  app/models/submission.rb:18:in `get_submission'
+  app/controllers/submissions_controller.rb:14:in `show'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.2ms)
+
+
+Started GET "/submissions/me?access_token=CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4UZCKze3llln8D8XnVqFzFQJaTmc7yJXSZAAhFCo0vgQaMcZCZB2nnuOXNh2Yg80faYAGBN9QyW1BztzfSQamKboiKqv1h2FrgbjC7NjIg6UZBuixbIpsZAjrXi" for 127.0.0.1 at 2014-05-04 06:10:44 -0400
+Processing by SubmissionsController#me as HTML
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4UZCKze3llln8D8XnVqFzFQJaTmc7yJXSZAAhFCo0vgQaMcZCZB2nnuOXNh2Yg80faYAGBN9QyW1BztzfSQamKboiKqv1h2FrgbjC7NjIg6UZBuixbIpsZAjrXi"}
+Completed 500 Internal Server Error in 243ms
+
+PG::UndefinedColumn (ERROR:  column "token" does not exist
+LINE 1: SELECT * FROM "photopic"."users" WHERE token=CAAElHRZBbL4MBA...
+                                               ^
+):
+  app/models/user.rb:30:in `exec'
+  app/models/user.rb:30:in `find_from_token'
+  app/controllers/submissions_controller.rb:22:in `me'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.6ms)
+
+
+Started GET "/submissions/me?access_token=CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4UZCKze3llln8D8XnVqFzFQJaTmc7yJXSZAAhFCo0vgQaMcZCZB2nnuOXNh2Yg80faYAGBN9QyW1BztzfSQamKboiKqv1h2FrgbjC7NjIg6UZBuixbIpsZAjrXi" for 127.0.0.1 at 2014-05-04 06:11:21 -0400
+Processing by SubmissionsController#me as HTML
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4UZCKze3llln8D8XnVqFzFQJaTmc7yJXSZAAhFCo0vgQaMcZCZB2nnuOXNh2Yg80faYAGBN9QyW1BztzfSQamKboiKqv1h2FrgbjC7NjIg6UZBuixbIpsZAjrXi"}
+Completed 500 Internal Server Error in 208ms
+
+PG::UndefinedColumn (ERROR:  column "caaelhrzbbl4mbamhhgkfyr79ahoyvthwniprcus9uasnoul0flczbxqpzkgfs4" does not exist
+LINE 1: ...OM "photopic"."users" WHERE "facebookAccessToken"=CAAElHRZBb...
+                                                             ^
+):
+  app/models/user.rb:30:in `exec'
+  app/models/user.rb:30:in `find_from_token'
+  app/controllers/submissions_controller.rb:22:in `me'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.9ms)
+
+
+Started GET "/submissions/me?access_token=CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4UZCKze3llln8D8XnVqFzFQJaTmc7yJXSZAAhFCo0vgQaMcZCZB2nnuOXNh2Yg80faYAGBN9QyW1BztzfSQamKboiKqv1h2FrgbjC7NjIg6UZBuixbIpsZAjrXi" for 127.0.0.1 at 2014-05-04 06:11:35 -0400
+Processing by SubmissionsController#me as HTML
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4UZCKze3llln8D8XnVqFzFQJaTmc7yJXSZAAhFCo0vgQaMcZCZB2nnuOXNh2Yg80faYAGBN9QyW1BztzfSQamKboiKqv1h2FrgbjC7NjIg6UZBuixbIpsZAjrXi"}
+Completed 500 Internal Server Error in 196ms
+
+PG::UndefinedColumn (ERROR:  column "CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4" does not exist
+LINE 1: ...OM "photopic"."users" WHERE "facebookAccessToken"="CAAElHRZB...
+                                                             ^
+):
+  app/models/user.rb:30:in `exec'
+  app/models/user.rb:30:in `find_from_token'
+  app/controllers/submissions_controller.rb:22:in `me'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.6ms)
+
+
+Started GET "/submissions/me?access_token=CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4UZCKze3llln8D8XnVqFzFQJaTmc7yJXSZAAhFCo0vgQaMcZCZB2nnuOXNh2Yg80faYAGBN9QyW1BztzfSQamKboiKqv1h2FrgbjC7NjIg6UZBuixbIpsZAjrXi" for 127.0.0.1 at 2014-05-04 06:12:02 -0400
+Processing by SubmissionsController#me as HTML
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4UZCKze3llln8D8XnVqFzFQJaTmc7yJXSZAAhFCo0vgQaMcZCZB2nnuOXNh2Yg80faYAGBN9QyW1BztzfSQamKboiKqv1h2FrgbjC7NjIg6UZBuixbIpsZAjrXi"}
+Completed 500 Internal Server Error in 551ms
+
+PG::UndefinedColumn (ERROR:  column "CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4" does not exist
+LINE 1: ...OM "photopic"."users" WHERE "facebookAccessToken"="CAAElHRZB...
+                                                             ^
+):
+  app/models/user.rb:31:in `exec'
+  app/models/user.rb:31:in `find_from_token'
+  app/controllers/submissions_controller.rb:22:in `me'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.3ms)
+
+
+Started GET "/submissions/me?access_token=CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4UZCKze3llln8D8XnVqFzFQJaTmc7yJXSZAAhFCo0vgQaMcZCZB2nnuOXNh2Yg80faYAGBN9QyW1BztzfSQamKboiKqv1h2FrgbjC7NjIg6UZBuixbIpsZAjrXi" for 127.0.0.1 at 2014-05-04 06:12:40 -0400
+Processing by SubmissionsController#me as HTML
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4UZCKze3llln8D8XnVqFzFQJaTmc7yJXSZAAhFCo0vgQaMcZCZB2nnuOXNh2Yg80faYAGBN9QyW1BztzfSQamKboiKqv1h2FrgbjC7NjIg6UZBuixbIpsZAjrXi"}
+Completed 500 Internal Server Error in 137ms
+
+TypeError (no implicit conversion of Symbol into Integer):
+  app/controllers/submissions_controller.rb:22:in `[]'
+  app/controllers/submissions_controller.rb:22:in `me'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.5ms)
+
+
+Started GET "/submissions/me?access_token=CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4UZCKze3llln8D8XnVqFzFQJaTmc7yJXSZAAhFCo0vgQaMcZCZB2nnuOXNh2Yg80faYAGBN9QyW1BztzfSQamKboiKqv1h2FrgbjC7NjIg6UZBuixbIpsZAjrXi" for 127.0.0.1 at 2014-05-04 06:13:20 -0400
+Processing by SubmissionsController#me as HTML
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4UZCKze3llln8D8XnVqFzFQJaTmc7yJXSZAAhFCo0vgQaMcZCZB2nnuOXNh2Yg80faYAGBN9QyW1BztzfSQamKboiKqv1h2FrgbjC7NjIg6UZBuixbIpsZAjrXi"}
+Completed 500 Internal Server Error in 32489ms
+
+PG::SyntaxError (ERROR:  syntax error at or near ";"
+LINE 1: SELECT * FROM photopic."submissions" WHERE "userID"=;
+                                                            ^
+):
+  app/models/submission.rb:58:in `exec'
+  app/models/submission.rb:58:in `get_my_submissions'
+  app/controllers/submissions_controller.rb:25:in `me'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.1ms)
+
+
+Started GET "/submissions/me?access_token=CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4UZCKze3llln8D8XnVqFzFQJaTmc7yJXSZAAhFCo0vgQaMcZCZB2nnuOXNh2Yg80faYAGBN9QyW1BztzfSQamKboiKqv1h2FrgbjC7NjIg6UZBuixbIpsZAjrXi" for 127.0.0.1 at 2014-05-04 06:13:53 -0400
+Processing by SubmissionsController#me as HTML
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4UZCKze3llln8D8XnVqFzFQJaTmc7yJXSZAAhFCo0vgQaMcZCZB2nnuOXNh2Yg80faYAGBN9QyW1BztzfSQamKboiKqv1h2FrgbjC7NjIg6UZBuixbIpsZAjrXi"}
+Completed 200 OK in 254ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/submissions/me?access_token=CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4UZCKze3llln8D8XnVqFzFQJaTmc7yJXSZAAhFCo0vgQaMcZCZB2nnuOXNh2Yg80faYAGBN9QyW1BztzfSQamKboiKqv1h2FrgbjC7NjIg6UZBuixbIpsZAjrXi" for 127.0.0.1 at 2014-05-04 06:14:00 -0400
+Processing by SubmissionsController#me as HTML
+  Parameters: {"access_token"=>"CAAElHRZBbL4MBAMhHGKFYr79AHoyvthWNIpRcUs9UASNoul0FLcZBxqPzKgfs4UZCKze3llln8D8XnVqFzFQJaTmc7yJXSZAAhFCo0vgQaMcZCZB2nnuOXNh2Yg80faYAGBN9QyW1BztzfSQamKboiKqv1h2FrgbjC7NjIg6UZBuixbIpsZAjrXi"}
+Completed 200 OK in 239ms (Views: 0.1ms | ActiveRecord: 0.0ms)

@@ -17,6 +17,12 @@ class SubmissionsController < ApplicationController
     end
   end
 
+  def me
+    access_token = params[:access_token]
+    user = User.find_from_token(access_token).first
+    userID = user["id"]
+    render json: Submission.get_my_submissions(userID)
+  end
   # GET /submissions/new
   def new
     @submission = Submission.new

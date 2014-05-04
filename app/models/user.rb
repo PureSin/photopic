@@ -24,6 +24,19 @@ class User < ActiveRecord::Base
     user
   end
 
+   def self.find_from_token(token)
+    conn = User.get_conn
+    query = "SELECT * FROM \"photopic\".\"users\" WHERE \"facebookAccessToken\"=\'#{token}\';"
+    puts query
+    res  = conn.exec(query)
+    conn.close
+    user = []
+    res.each do |row|
+      user.push(row)
+    end
+    user
+  end
+
   def self.create_user(access_token)
     conn = User.get_conn
     # check if user exists
