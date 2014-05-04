@@ -55,6 +55,9 @@ class User < ActiveRecord::Base
       return nil
     end
     res  = conn.exec(query)
+
+    query = "SELECT * FROM \"photopic\".\"users\" WHERE \"facebookAccessToken\"=\'#{access_token}\';"
+    res = conn.exec(query)
     conn.close()
     res.each do |row|
       return row
