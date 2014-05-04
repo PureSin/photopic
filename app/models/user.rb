@@ -35,6 +35,7 @@ class User < ActiveRecord::Base
     end
 
     unless user.nil?
+      conn.close()
       return user
     end
 
@@ -42,6 +43,7 @@ class User < ActiveRecord::Base
     @graph = Koala::Facebook::API.new(access_token)
     user = @graph.get_object("me")
     if user.nil?
+      conn.close()
       return nil
     end
     user["access_token"] = access_token
@@ -52,6 +54,7 @@ class User < ActiveRecord::Base
     query = User.build_user_query(user)
     if query.nil?
       puts "invalid request"
+      conn.close()
       return nil
     end
     res  = conn.exec(query)
