@@ -29,7 +29,12 @@ class SubmissionsController < ApplicationController
   # POST /submissions
   # POST /submissions.json
   def create
-    @submission = Submission.new(submission_params)
+    submission = submission_params
+    if submission[:userID].nil? || submission[:contestID].nil? || submission[:mediaURL].nil? || submission[:latitude].nil? || submission[:longitude].nil?
+      return render :json => { :error => 1, :success => 0 }
+    end
+
+    @submission = Submission.create(submission)
 
     respond_to do |format|
       if @submission.save
@@ -50,6 +55,6 @@ class SubmissionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def submission_params
-      params[:submission]
+      params
     end
 end
