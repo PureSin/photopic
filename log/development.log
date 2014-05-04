@@ -3835,3 +3835,117 @@ Started GET "/contests?latitude=12.4&longitude=4.21" for 127.0.0.1 at 2014-05-04
 Processing by ContestsController#index as HTML
   Parameters: {"latitude"=>"12.4", "longitude"=>"4.21"}
 Completed 200 OK in 658ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contests?latitude=12.4&longitude=4.21" for 127.0.0.1 at 2014-05-04 01:06:50 -0400
+Processing by ContestsController#index as HTML
+  Parameters: {"latitude"=>"12.4", "longitude"=>"4.21"}
+Completed 200 OK in 575ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contests?latitude=12.4&longitude=4.21" for 127.0.0.1 at 2014-05-04 01:07:05 -0400
+Processing by ContestsController#index as HTML
+  Parameters: {"latitude"=>"12.4", "longitude"=>"4.21"}
+Completed 200 OK in 108329ms (Views: 0.3ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/contests?latitude=12.4&longitude=4.21" for 127.0.0.1 at 2014-05-04 01:08:53 -0400
+Processing by ContestsController#index as HTML
+  Parameters: {"latitude"=>"12.4", "longitude"=>"4.21"}
+Completed 500 Internal Server Error in 1ms
+
+SyntaxError (/Users/kelvinma/Desktop/hack/photopic/app/models/contests.rb:56: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/contests_controller.rb:12:in `index'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.7ms)
+
+
+Started GET "/contests?latitude=12.4&longitude=4.21" for 127.0.0.1 at 2014-05-04 01:08:53 -0400
+Processing by ContestsController#index as HTML
+  Parameters: {"latitude"=>"12.4", "longitude"=>"4.21"}
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/Users/kelvinma/Desktop/hack/photopic/app/models/contests.rb:56: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/contests_controller.rb:12:in `index'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.9ms)
+
+
+Started GET "/contests?latitude=12.4&longitude=4.21" for 127.0.0.1 at 2014-05-04 01:08:55 -0400
+Processing by ContestsController#index as HTML
+  Parameters: {"latitude"=>"12.4", "longitude"=>"4.21"}
+Completed 500 Internal Server Error in 1ms
+
+SyntaxError (/Users/kelvinma/Desktop/hack/photopic/app/models/contests.rb:56: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/contests_controller.rb:12:in `index'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.4ms)
+
+
+Started GET "/contests?latitude=12.4&longitude=4.21" for 127.0.0.1 at 2014-05-04 01:08:57 -0400
+Processing by ContestsController#index as HTML
+  Parameters: {"latitude"=>"12.4", "longitude"=>"4.21"}
+Completed 500 Internal Server Error in 1ms
+
+SyntaxError (/Users/kelvinma/Desktop/hack/photopic/app/models/contests.rb:56: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/contests_controller.rb:12:in `index'
+
+
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/kelvinma/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.9ms)
+
+
+Started GET "/contests?latitude=12.4&longitude=4.21" for 127.0.0.1 at 2014-05-04 01:09:22 -0400
+Processing by ContestsController#index as HTML
+  Parameters: {"latitude"=>"12.4", "longitude"=>"4.21"}
+Completed 200 OK in 148ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contests?latitude=12.4&longitude=4.21" for 127.0.0.1 at 2014-05-04 01:09:29 -0400
+Processing by ContestsController#index as HTML
+  Parameters: {"latitude"=>"12.4", "longitude"=>"4.21"}
+Completed 200 OK in 152ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contests?latitude=12.4&longitude=4.21" for 127.0.0.1 at 2014-05-04 01:09:41 -0400
+Processing by ContestsController#index as HTML
+  Parameters: {"latitude"=>"12.4", "longitude"=>"4.21"}
+Completed 200 OK in 55820ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contests?latitude=12.4&longitude=4.21" for 127.0.0.1 at 2014-05-04 01:10:37 -0400
+Processing by ContestsController#index as HTML
+  Parameters: {"latitude"=>"12.4", "longitude"=>"4.21"}
+Completed 200 OK in 498ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contests?latitude=12.4&longitude=4.21" for 127.0.0.1 at 2014-05-04 01:10:39 -0400
+Processing by ContestsController#index as HTML
+  Parameters: {"latitude"=>"12.4", "longitude"=>"4.21"}
+Completed 200 OK in 126ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contests?latitude=12.4&longitude=4.21" for 127.0.0.1 at 2014-05-04 01:10:40 -0400
+Processing by ContestsController#index as HTML
+  Parameters: {"latitude"=>"12.4", "longitude"=>"4.21"}
+Completed 200 OK in 120ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contests?latitude=12.4&longitude=4.21" for 127.0.0.1 at 2014-05-04 01:10:41 -0400
+Processing by ContestsController#index as HTML
+  Parameters: {"latitude"=>"12.4", "longitude"=>"4.21"}
+Completed 200 OK in 120ms (Views: 0.2ms | ActiveRecord: 0.0ms)

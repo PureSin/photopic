@@ -11,6 +11,7 @@ class Contests < ActiveRecord::Base
       contests.push(row)
     end
     contests
+
   end
 
   def self.get_open_contests(params)
@@ -20,7 +21,7 @@ class Contests < ActiveRecord::Base
     conn.close()
     contests = []
     res.each do |row|
-      contests.push(row)
+      contests.push(row["getOpenContests"])
     end
     contests
   end
