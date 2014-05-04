@@ -66,6 +66,19 @@ class Contests < ActiveRecord::Base
     contests.first
   end
 
+  def self.get_contest_submissions(contestID)
+    conn = Contests.get_conn
+    query = "SELECT * FROM photopic.\"getContestSubmissions\"(\'#{contestID}\');"
+    puts query
+    res = conn.exec(query)
+    conn.close()
+    submissions = []
+    res.each do |row|
+      submissions.push(row)
+    end
+    submissions
+  end
+
   private
   def self.get_conn
     PGconn.connect('user3242.c1umedcvkcua.us-east-1.rds.amazonaws.com',5432,'','','photopic','user3242','user3242password')

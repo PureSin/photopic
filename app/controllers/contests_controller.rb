@@ -17,9 +17,9 @@ class ContestsController < ApplicationController
   # GET /contests/1
   # GET /contests/1.json
   def show
-    @contest = Contests.get_contest(params[:id])
-    unless @contest.nil?
-      render json: @contest
+    @submissions = Contests.get_contest_submissions(params[:id])
+    unless @submissions.nil?
+      render json: @submissions
       return
     end
   end
