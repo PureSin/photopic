@@ -11,13 +11,13 @@
 
   <tbody>
   <%= simple_form_for :contest, :url => '/contests' do |f| %>
-    <%= f.input :creatorID %>
+    <%= f.input :creatorID, label: "Creator ID" %>
     <%= f.input :title %>
     <%= f.input :description %>
-    <%= f.input :isOutdoor, as: :boolean %>
+    <%= f.input :isOutdoor, as: :boolean, label: "Outdoors photo?" %>
     <%= f.input :weather, as: :select, collection: @weather %>
     <%= f.input :contestEndDate, label_html: { class: '"input-append date"' }, label: "Contest end time" %>
-    <%= f.input :price %>
+    <%= f.input :price, label: "Contest prize amount" %>
     <%= f.input :latitude %>
     <%= f.input :longitude %>
     <%= f.button :submit, label: "create new contest" %>
